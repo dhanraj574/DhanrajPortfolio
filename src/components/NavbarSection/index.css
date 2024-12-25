@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.navbar-section{
+
+    background-color:#121113 ;
+    position: fixed;
+    width:100vw;
+}
+.navbar-color{
+    background-color:#121113 ;
+    z-index: 1000; /* Ensure the navbar stays on top */
+  
+}
+.navbar-cont{
+    padding: 0px 20px;
+}
+.logo-color{
+    color: #ffffff;
+    font-family: roboto Mono;
+    font-weight: 600;
+    font-size: 22px !important;
+    text-decoration: none;
+}
+.logo-color:hover{
+    color: #ffffff;
+    font-family:roboto Mono;
+    font-weight: 600;
+    font-size: 22px !important;
+}
+.nav-link{
+    color: #ffffff;
+    cursor: pointer;
+    
+    
+    
+}
+.nav-link:hover{
+    color: #ffffff;
+    
+    
+}
+.nav-link::after{
+    color: #ffffff ;
+    
+}
+
+
+@media screen and (min-width:768px){
+    .logo-color{
+        color: #ffffff;
+        font-family: roboto Mono;
+        font-weight: 600;
+        font-size: 32px !important;
+    }
+    .logo-color:hover{
+        color: #ffffff;
+        font-family:roboto Mono;
+        font-weight: 600;
+        font-size: 32px !important;
+    }
+    .navbar-cont{
+        padding: 0px 40px;
+    }
+    .nav-link {
+        position: relative;
+        color: #ffffff;
+        text-decoration: none;
+        width: 100%;
+        
+      }
+      
+      
+      
+      .nav-link:hover::after {
+        width: 100%;
+      }
+}
+
+@media screen and (min-width:1024px){
+    .navbar-cont{
+        padding: 0px 60px;
+    }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-image:linear-gradient(to right , rgb(105, 28, 228) 0% ,  rgb(179, 1, 249) 20%, rgb(247, 6, 235) 70%);
+        transition: width 0.3s;
+      }
+}
